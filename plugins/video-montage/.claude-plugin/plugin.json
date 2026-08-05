@@ -1,0 +1,9 @@
+{
+  "name": "video-montage",
+  "description": "Механический монтаж видео через ffmpeg: резка пауз по голосовой дорожке, склейка сцен, субтитры, оверлеи, PiP, цветокоррекция, финальный рендер для YouTube на NVENC",
+  "version": "2.0.0",
+  "author": {
+    "name": "Артур — ИИмерсивный",
+    "url": "https://youtube.com/@art.immersive"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "artcog",
+  "description": "Скиллы Артура (@art.immersive) для Claude Code — то, чем он монтирует и ведёт канал",
+  "owner": {
+    "name": "Артур — ИИмерсивный",
+    "url": "https://youtube.com/@art.immersive"
+  },
+  "plugins": [
+    {
+      "name": "video-montage",
+      "source": "./plugins/video-montage",
+      "description": "Механический монтаж видео через ffmpeg: резка пауз по голосовой дорожке, склейка сцен, субтитры, оверлеи, PiP, цветокоррекция, финальный рендер для YouTube на NVENC",
+      "version": "2.0.0",
+      "author": {
+        "name": "Артур — ИИмерсивный",
+        "url": "https://youtube.com/@art.immersive"
+      },
+      "category": "video",
+      "tags": ["ffmpeg", "video", "montage", "subtitles", "youtube", "auto-editor", "nvenc"]
+    }
+  ]
+}
