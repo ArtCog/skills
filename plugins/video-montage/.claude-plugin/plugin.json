@@ -1,9 +1,9 @@
 {
   "name": "video-montage",
-  "description": "Механический монтаж видео через ffmpeg: резка пауз по голосовой дорожке, склейка сцен, субтитры, оверлеи, PiP, цветокоррекция, финальный рендер для YouTube на NVENC",
-  "version": "2.0.0",
+  "description": "Mechanical video editing via ffmpeg: cut silence off the voice track (not the mix), concat scenes, subtitles, overlays, circular webcam PiP, colour grade, final YouTube render on NVENC. Skill text is in Russian. Механический монтаж через ffmpeg: резка пауз по голосовой дорожке, склейка сцен, субтитры, оверлеи, круглая вебка, цветокоррекция, финальный рендер на NVENC.",
+  "version": "2.0.1",
   "author": {
-    "name": "Артур — ИИмерсивный",
+    "name": "ИИмерсивный (@art.immersive)",
     "url": "https://youtube.com/@art.immersive"
   }
 }
