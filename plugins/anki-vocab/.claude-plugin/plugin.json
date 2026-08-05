@@ -1,0 +1,9 @@
+{
+  "name": "anki-vocab",
+  "description": "Turn vocabulary from anything — a video, article, image, or a word typed in chat — into flashcards in your own Anki, in any language pair. Follows your existing decks and note types instead of inventing structure. Requires Anki desktop with the AnkiConnect add-on. Skill text is in English. Слова из любого источника — в твою колоду Anki, для любой языковой пары.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ИИмерсивный (@art.immersive)",
+    "url": "https://youtube.com/@art.immersive"
+  }
+}
