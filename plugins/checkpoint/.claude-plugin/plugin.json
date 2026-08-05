@@ -1,0 +1,9 @@
+{
+  "name": "checkpoint",
+  "description": "Close a work block by writing project state to STATE.md, so the next session — or a different agent entirely — resumes without being re-briefed. Runs only when you ask. Skill text is in Russian. Закрыть блок работы: записать состояние проекта в STATE.md, чтобы следующая сессия или другой агент продолжили без пересказа.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ИИмерсивный (@art.immersive)",
+    "url": "https://youtube.com/@art.immersive"
+  }
+}

@@ -17,6 +17,18 @@
       },
       "category": "video",
       "tags": ["ffmpeg", "video", "montage", "subtitles", "youtube", "auto-editor", "nvenc"]
+    },
+    {
+      "name": "checkpoint",
+      "source": "./plugins/checkpoint",
+      "description": "Close a work block by writing project state to STATE.md, so the next session — or a different agent entirely — resumes without being re-briefed. Runs only when you ask, never on its own. Skill text is in Russian. Закрыть блок работы: записать состояние проекта в STATE.md, чтобы следующая сессия или другой агент продолжили без пересказа.",
+      "version": "1.0.0",
+      "author": {
+        "name": "ИИмерсивный (@art.immersive)",
+        "url": "https://youtube.com/@art.immersive"
+      },
+      "category": "workflow",
+      "tags": ["state", "handoff", "context", "session", "agents-md", "documentation"]
     }
   ]
 }
