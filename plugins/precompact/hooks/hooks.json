@@ -1,0 +1,17 @@
+{
+  "description": "After /compact, feed the note written by /precompact back into the session.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/precompact-restore.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

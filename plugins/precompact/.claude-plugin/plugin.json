@@ -1,0 +1,9 @@
+{
+  "name": "precompact",
+  "description": "Prepare a session for /compact: finish the current step, then write down what the compactor drops (dead ends, your decisions verbatim, the exact stopping point). A bundled hook feeds the note back right after compaction. Skill text is in Russian. Подготовить сессию к сжатию контекста: записать тупики, решения и точное место остановки; хук вливает записку обратно после /compact.",
+  "version": "1.0.0",
+  "author": {
+    "name": "ИИмерсивный (@art.immersive)",
+    "url": "https://youtube.com/@art.immersive"
+  }
+}

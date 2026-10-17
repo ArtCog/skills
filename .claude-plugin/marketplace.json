@@ -41,6 +41,18 @@
       },
       "category": "learning",
       "tags": ["anki", "flashcards", "vocabulary", "language-learning", "ankiconnect", "spaced-repetition"]
+    },
+    {
+      "name": "precompact",
+      "source": "./plugins/precompact",
+      "description": "Prepare a session for /compact: finish the current step, then write down what the compactor drops (dead ends, your decisions verbatim, the exact stopping point). A bundled hook feeds the note back right after compaction; a 'with task' mode also leaves a task file in the project for any later session. Skill text is in Russian. Подготовить сессию к сжатию контекста: тупики, решения и место остановки переживают /compact.",
+      "version": "1.0.0",
+      "author": {
+        "name": "ИИмерсивный (@art.immersive)",
+        "url": "https://youtube.com/@art.immersive"
+      },
+      "category": "workflow",
+      "tags": ["compact", "context", "handoff", "session", "hooks"]
     }
   ]
 }

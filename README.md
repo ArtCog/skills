@@ -9,6 +9,7 @@ Claude Code plugin marketplace by [@art.immersive](https://youtube.com/@art.imme
 /plugin install video-montage@artcog
 /plugin install checkpoint@artcog
 /plugin install anki-vocab@artcog
+/plugin install precompact@artcog
 ```
 
 Updates arrive on their own: I push here, your copy follows.
@@ -22,6 +23,12 @@ Writes where the work actually stands into `STATE.md`, so the next session — o
 It runs **only when you ask**. Never on its own, however finished the work looks — deciding that a block is closed is your call, not the agent's.
 
 The discipline is in what the file refuses to hold: solved questions get deleted, and a lesson that hardened into a permanent project rule moves out to `AGENTS.md`. That's what keeps it short enough to stay read.
+
+### `precompact`: carry unfinished work through `/compact`
+
+Compaction loses context, and the summary is written by a compactor that saw the transcript but never worked in it. It reliably drops three things: the dead ends you already tried, your decisions in your own words, and the exact place the work stopped. Run `/precompact` before `/compact`: it finishes the current step, reads the state off the disk, and writes those three into a short note. The bundled `SessionStart` hook feeds that note back the moment compaction ends.
+
+The "with task" mode also leaves a task file in the project, so a brand-new session, or Codex, which has no such hook, can pick the work up from it. `/checkpoint` closes a finished block; `/precompact` carries an unfinished one.
 
 ### `anki-vocab` — vocabulary into your own Anki
 
@@ -62,6 +69,7 @@ MIT. Take it, change it, ship with it.
 /plugin install video-montage@artcog
 /plugin install checkpoint@artcog
 /plugin install anki-vocab@artcog
+/plugin install precompact@artcog
 ```
 
 Обновления прилетают сами: я пушу сюда — у тебя обновляется.
@@ -73,6 +81,10 @@ MIT. Take it, change it, ship with it.
 Запускается **только когда попросишь**. Никогда сам, каким бы законченным ни выглядел блок — момент «работа закрыта» выбираешь ты.
 
 Дисциплина файла в том, чего он не хранит: решённый вопрос удаляется, а грабля, ставшая постоянным правилом проекта, уезжает в `AGENTS.md`. За счёт этого он остаётся достаточно коротким, чтобы его читали.
+
+**`precompact`: пронести незаконченную работу через `/compact`.** Сжатие контекста теряет часть разговора, а саммари пишет сжиматель, который видел переписку, но не работал в ней. Он стабильно роняет три вещи: тупики, которые ты уже прошёл, твои решения твоими словами и точное место, где работа встала. Зови `/precompact` перед `/compact`: он доводит текущий шаг до целого, снимает состояние с диска и записывает эти три вещи в короткую записку. Хук из плагина вливает её обратно сразу после сжатия.
+
+Режим «с задачей» вдобавок оставляет файл задачи в проекте, и по нему продолжит любая новая сессия или Codex, где такого хука нет. `/checkpoint` закрывает законченный блок, `/precompact` переносит незаконченный.
 
 **`anki-vocab` — слова в твою собственную Anki.** Дай что угодно — видео, статью, скриншот или одно слово в чате — и получишь карточки в той колоде, которой пользуешься, для любой языковой пары. Перед, оборот, направление и тип заметки берутся из **твоих** привычек: скилл смотрит колоду, а не выдумывает структуру.
 
